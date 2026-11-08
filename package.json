@@ -1,0 +1,15 @@
+{
+  "name": "herdr-hostingaffe",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Read-only native Hostingaffe machine overview for Herdr",
+  "license": "MIT",
+  "engines": { "node": ">=24" },
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "test:contract": "node scripts/check-contract.mjs",
+    "check": "herdr-app check mods/hostingaffe && herdr-app check mods/hostingaffe-launcher",
+    "assets": "node scripts/build-avatars.mjs"
+  }
+}
